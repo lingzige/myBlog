@@ -1,0 +1,46 @@
+body{
+			background-color: #808080;
+		}
+		.con{
+			width: 350px;
+			height: 320px;
+			background-color: white;
+			margin: 100px auto 0;
+			padding-right: 0;
+			padding-left: 0;
+			border: 1px solid white;
+		}
+
+		.title{
+			color: #904;
+			font-size: 16px;
+			/*text-align: center;*/
+			padding-top:10px;
+		}
+
+		.content{
+			text-align: left;
+			padding-left: 60px;
+			/*margin-top: 20px;*/
+		}
+
+		.content a{
+			text-decoration: none;
+			color: #4688f1;
+		}
+
+		.button{
+			font-size: 16px;
+			color: #904;
+			padding: 5px 20px;
+		}
+
+		.content div{
+			margin-top: 10px;
+		}
+
+		span{
+			font-size: 14px;
+			/*margin-top: 10px;*/
+
+		}

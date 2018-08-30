@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户注册-岭岭的园</title>
+	<script type="text/javascript" src="../jquery-1.12.4.min.js"></script>
+	<!-- <script type="text/javascript" src="register.js"></script> -->
+	
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<!-- <script type="text/javascript" src="../js/register.js"></script> -->
+	<script type="text/javascript" src="../js/register.js"></script>
+	<script type="text/javascript" src="../js/registerValidition.js"></script>
+</head>
+<body>
+	<div class="register">
+		<!--导航栏部分的html-->
+		<div class="navigationBar">
+			<ul class="list">
+				<li><a href="#">岭岭的园</a></li>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">帮助</a></li>
+			</ul>
+		</div>
+
+
+		<!-- 正式注册地方的html -->
+		<div class="formRegister">
+			<div><span class="title">注册新用户</span></div>
+			<div class="registerInfo">
+				<div class="first">
+					<div class="firstname">
+						<label class="emailname">邮箱</label>
+					</div>
+					<div class="firstFrame">
+						<input class="emailFrame" type="text" name="email" placeholder="需要通过邮件激活账户">
+						<span class="error_tip">提示信息</span>
+						<img src="../images/psb.jpg" width="300px" height=200px" class="img">
+					</div>
+				</div>
+
+				<div class="second">
+					<div class="secondname">
+						<label class="phonenumber">手机号码</label>
+					</div>
+					<div class="secondFrame">
+						<input class="phoneFrame" type="text" name="phone" placeholder="激活账户需要手机短信验证">
+						<span class="error_tip">提示信息</span>
+					</div>
+				</div>
+
+				<div class="third">
+					<div class="thirdname">
+						<label class="loginname">登录名称</label>
+					</div>
+					<div class="thirdFrame">
+						<input class="loginnameFrame" type="text" name="login" placeholder="登录用户名，不少于4个字符">
+						<span class="error_tip">提示信息</span>
+						
+					</div>
+				</div>
+
+				<div class="fourth">
+					<div class="fourthname">
+						<label class="nickname">显示名称</label>
+					</div>
+					<div class="fourthFrame">
+						<input class="nicknameFrame" type="text" name="nickname" placeholder="即昵称，不少于2个字符">
+						<span class="error_tip">提示信息</span>
+					</div>
+				</div>
+
+				<div class="fifth">
+					<div class="fifthname">
+						<label class="passwordname">密码</label>
+					</div>
+					<div class="fifthFrame">
+						<input class="passwordFrame" type="password" name="pwd" placeholder="至少8位，必须包含字母、数字、特殊字符">
+						<span class="error_tip">提示信息</span>
+					</div>
+				</div>
+
+				<div class="sixth">
+					<div class="sixthname">
+						<label class="confirmpwdname">确认密码</label>
+					</div>
+					<div class="sixthFrame">
+						<input class="confirmFrame" type="password" name="confirmpwd" placeholder="请输入确认密码">
+						<span class="error_tip">提示信息</span>
+					</div>
+				</div>
+
+				<div class="button">
+					<button type="submit" class="btn">注&nbsp;&nbsp;册</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="userAgreement">
+				<span>* “注册”按钮，即表示您同意并愿意遵守<a href="#">用户协议</a>。</span>
+		</div>
+
+
+		<!-- 页面底部信息 -->
+		<div class="footer">
+			<a href="#">关于博客园</a>&nbsp;&nbsp;
+			<a href="#">联系我们</a>
+			<span>©2004-2018</span>
+			<a href="#">博客园</a>
+			<span>保留所有权利 Powered by ASP.NET Core on Linux</span>
+		</div>
+
+	</div>
+</body>
+</html>
