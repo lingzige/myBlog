@@ -85,7 +85,7 @@ $(function(){
 
 	function check_loginname(){
 		var val = $('.loginnameFrame').val();
-		var re = /^[a-z0-9A-Z]$/;
+		var re = /^\w{4,8}$/;
 		if(val==''){
 			$('.loginnameFrame').next().html('登录名不能为空');
 			$('.loginnameFrame').next().show();
@@ -117,7 +117,7 @@ $(function(){
 
 	function check_nickname(){
 		var val = $('.nicknameFrame').val();
-		var re = /^[a-z0-9A-Z]$/;
+		var re = /^\w{2,8}$/;
 		if(val==''){
 			$('.nicknameFrame').next().html('昵称不能为空');
 			$('.nicknameFrame').next().show();
