@@ -52,7 +52,7 @@ $(function(){
 
 	function check_phone(){
 		var val = $('.phoneFrame').val();
-		var re = /^[a-z0-9A-Z]$/;
+		var re = /^(1)(3|5|7|8)(\d){9}$/;
 		if(val==''){
 			$('.phoneFrame').next().html('手机号不能为空');
 			$('.phoneFrame').next().show();
@@ -65,7 +65,7 @@ $(function(){
 		}
 		else{
 			error_phone = true;
-			$('.phoneFrame').next().html('手机号必须为11位整数');
+			$('.phoneFrame').next().html('请输入正确的格式');
 			$('.phoneFrame').next().show();
 		}
 	}
