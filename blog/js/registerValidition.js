@@ -150,7 +150,7 @@ $(function(){
 
 	function check_pwd(){
 		var val = $('.passwordFrame').val();
-		var re = /^[a-z0-9A-Z]$/;
+		var re = /^[0-9a-zA-Z\_\.\@\#\$\%\^\&\*\~\!]{8,16}$/;
 		if(val==''){
 			$('.passwordFrame').next().html('密码不能为空');
 			$('.passwordFrame').next().show();
@@ -168,25 +168,25 @@ $(function(){
 		}
 	}
 
+
+
+
+	// 判断确认密码和第一次输入的是否一样
 	$('.confirmFrame').blur(function(){
 		check_cpwd();
 	})
 
 	$('.confirmFrame').focus(function(){
-		$('this').next().hide();
+		$(this).next().hide();
 	})
 
-
-
-
-	// 判断确认密码和第一次输入的是否一样
 	function check_cpwd(){
 		var val1 = $('.passwordFrame').val();
 		var val2 = $('.confirmFrame').val();
 		if(val2==''){
 			$('.confirmFrame').next().html('确认密码不能为空');
 			$('.confirmFrame').next().show();
-			error_phone = true;
+			error_cpwd = true;
 			return;
 		}
 
@@ -200,6 +200,7 @@ $(function(){
 			
 		}
 	}
+
 
 	$('.btn').submit(function(){
 		check_email();
