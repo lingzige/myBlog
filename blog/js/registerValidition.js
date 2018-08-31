@@ -19,7 +19,7 @@ $(function(){
 
 	function check_email(){
 		var val = $('.emailFrame').val();
-		var re = /^[a-z0-9A-Z]$/;
+		var re = /^(\d|a-zA-Z)(\w*\_*\w+)\@(qq|163|sina)\.(com)$/;
 		if(val==''){
 			$('.emailFrame').next().html('邮箱不能为空');
 			$('.emailFrame').next().show();
